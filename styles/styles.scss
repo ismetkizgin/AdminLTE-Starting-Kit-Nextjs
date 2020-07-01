@@ -6,7 +6,8 @@
  */
 //$blue:    purple; // Override variables here to style accordingly
 @import '~bootstrap/scss/bootstrap';
-@import "~admin-lte/build/scss/AdminLTE-raw.scss";
+@import "~admin-lte/build/scss/AdminLTE.scss";
+
 
 $color: blue;
 h1 {

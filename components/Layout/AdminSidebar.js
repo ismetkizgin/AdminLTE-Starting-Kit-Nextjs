@@ -35,6 +35,17 @@ class AdminSidebar extends React.Component {
                                 </a>
                             </Link>
                         </li>
+                        <li className="nav-item">
+                            <Link href="/test">
+                                <a className={['nav-link', pathname === '/test' ? 'active' : ''].join(' ')}>
+                                    <i className="nav-icon fa fa-star"/>
+                                    <p>
+                                        Test
+                                        <span className="right badge badge-success">2</span>
+                                    </p>
+                                </a>
+                            </Link>
+                        </li>
                         <li className="nav-item has-treeview menu-closed">
                             <a href="#" className="nav-link">
                                 <i className="nav-icon fa fa-dashboard"/>

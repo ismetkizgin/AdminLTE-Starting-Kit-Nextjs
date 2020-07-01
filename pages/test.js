@@ -1,7 +1,7 @@
 import AdminLayoutHoc from "../components/Layout/AdminLayoutHoc";
 import Link from 'next/link';
 
-export default class Users extends React.Component {
+export default class  extends React.Component {
     render() {
         return (
             <AdminLayoutHoc
@@ -11,62 +11,62 @@ export default class Users extends React.Component {
             </Link>}
             url={this.props.url}
         >
-            <div class="row">
-          <div class="col-lg-3 col-6">
+            <div className="row">
+          <div className="col-lg-3 col-6">
             
-            <div class="small-box bg-info">
-              <div class="inner">
+            <div className="small-box bg-info">
+              <div className="inner">
                 <h3>150</h3>
 
                 <p>New Orders</p>
               </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
+              <div className="icon">
+                <i className="ion ion-bag"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           
-          <div class="col-lg-3 col-6">
-            <div class="small-box bg-success">
-              <div class="inner">
+          <div className="col-lg-3 col-6">
+            <div className="small-box bg-success">
+              <div className="inner">
                 <h3>53<sup style={{fontSize: '20px'}}>%</sup></h3>
 
                 <p>Bounce Rate</p>
               </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
+              <div className="icon">
+                <i className="ion ion-stats-bars"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           
-          <div class="col-lg-3 col-6">
-            <div class="small-box bg-warning">
-              <div class="inner">
+          <div className="col-lg-3 col-6">
+            <div className="small-box bg-warning">
+              <div className="inner">
                 <h3>44</h3>
 
                 <p>User Registrations</p>
               </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
+              <div className="icon">
+                <i className="ion ion-person-add"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           
-          <div class="col-lg-3 col-6">
+          <div className="col-lg-3 col-6">
             
-            <div class="small-box bg-danger">
-              <div class="inner">
+            <div className="small-box bg-danger">
+              <div className="inner">
                 <h3>65</h3>
 
                 <p>Unique Visitors</p>
               </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+              <div className="icon">
+                <i className="ion ion-pie-graph"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
         </div>
