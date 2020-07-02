@@ -1,4 +1,5 @@
-import AdminLayoutHoc from "../components/Layout/AdminLayoutHoc";
+import { AdminLayoutHoc } from '../components/layout/admin';
+
 import Link from 'next/link';
 
 export default class  extends React.Component {
@@ -6,11 +7,7 @@ export default class  extends React.Component {
         return (
             <AdminLayoutHoc
             contentTitle={'Users'}
-            contentTitleButton={<Link href="/add-user">
-                <button type="button" className="btn btn-outline-success btn-sm"><i className="fa fa-user-plus fa-fw"/> Add a new user</button>
-            </Link>}
-            url={this.props.url}
-        >
+            url={this.props.url}>
             <div className="row">
           <div className="col-lg-3 col-6">
             

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const AdminFooter = (props) => {
+export const AdminFooter = (props) => {
     if (!props.leftContent && !props.rightContent) {
         return null;
     }
@@ -15,5 +15,3 @@ AdminFooter.propTypes = {
     leftContent: PropTypes.element,
     rightContent: PropTypes.string,
 };
-
-export default AdminFooter;

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { withRouter } from 'next/router';
 
-class AdminSidebar extends React.Component {
+class AdminSideBar extends React.Component {
     render() {
         const { pathname } = this.props.router;
         return <aside className="main-sidebar sidebar-dark-primary elevation-4" style={{minHeight: '846px'}}>
@@ -76,12 +76,12 @@ class AdminSidebar extends React.Component {
     }
 }
 
-AdminSidebar.propTypes = {
+AdminSideBar.propTypes = {
     projectName: PropTypes.string,
 };
 
-AdminSidebar.defaultProps = {
+AdminSideBar.defaultProps = {
     projectName: 'AdminLTE 3'
 };
 
-export default withRouter(AdminSidebar)
+export const AdminSidebar = withRouter(AdminSideBar);
