@@ -7,15 +7,11 @@ export default class  extends React.Component {
         return (
             <AdminLayoutHoc
             contentTitle={'Users'}
-<<<<<<< HEAD
             contentTitleButton={<Link href="/add-user">
                 <button type="button" className="btn btn-outline-success btn-sm"><i className="fa fa-user-plus fa-fw"/> Add a new user</button>
             </Link>}
             url={this.props.url}
             >
-=======
-            url={this.props.url}>
->>>>>>> 67e927dbfcb22eef12f7c4f183b6365b3d7d290e
             <div className="row">
               <div className="col-lg-3 col-6">
                 
