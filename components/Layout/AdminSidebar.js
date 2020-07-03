@@ -5,7 +5,7 @@ import { withRouter } from 'next/router';
 class AdminSidebar extends React.Component {
     render() {
         const { pathname } = this.props.router;
-        return <aside className="main-sidebar sidebar-dark-primary elevation-4" style={{minHeight: '846px'}}>
+        return <aside className="main-sidebar sidebar-dark-primary elevation-4">
             <Link href="/">
                 <a className="brand-link text-center">
                     <i className="fa fa-home fa-2x brand-image ml-2"/>
