@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const AdminHeader = (props) => {
+export const AdminHeader = (props) => {
     return <nav className="main-header navbar navbar-expand bg-white navbar-light border-bottom">
         <ul className="navbar-nav">
             <li className="nav-item">
@@ -67,5 +67,3 @@ const AdminHeader = (props) => {
         </ul>
     </nav>
 };
-
-export default AdminHeader;

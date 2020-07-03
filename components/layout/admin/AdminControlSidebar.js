@@ -1,4 +1,4 @@
-const AdminControlSidebar = (props) => {
+export const AdminControlSidebar = (props) => {
     return <aside className="control-sidebar control-sidebar-dark">
         <div className="p-3">
             <h5>Title</h5>
@@ -6,5 +6,3 @@ const AdminControlSidebar = (props) => {
         </div>
     </aside>
 };
-
-export default AdminControlSidebar;

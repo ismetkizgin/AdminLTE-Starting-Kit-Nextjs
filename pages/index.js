@@ -1,21 +1,21 @@
-import AdminLayoutHoc from '../components/Layout/AdminLayoutHoc';
+import { AdminLayoutHoc } from '../components/layout/admin';
 
 export default class Index extends React.Component {
     render() {
-        return <AdminLayoutHoc contentTitle={'Home'} contentTitleButton={<i className="fa fa-2x fa-home"/>} url={this.props.url}>
+        return <AdminLayoutHoc contentTitle={'Home'} contentTitleButton={<i className="fa fa-2x fa-home" />} url={this.props.url}>
             <div className="row">
                 <div className="col-md-6">
                     <div className="card">
                         <div className="card-header">
                             <h3 className="card-title">
-                                <i className="fa fa-text-width"/>&nbsp;Headlines
+                                <i className="fa fa-text-width" />&nbsp;Headlines
                             </h3>
                             <div className="card-tools">
                                 <button type="button" className="btn btn-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-                                    <i className="fa fa-minus"/>
+                                    <i className="fa fa-minus" />
                                 </button>
                                 <button type="button" className="btn btn-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-                                    <i className="fa fa-times"/>
+                                    <i className="fa fa-times" />
                                 </button>
                             </div>
                         </div>
@@ -37,7 +37,7 @@ export default class Index extends React.Component {
                     <div className="card">
                         <div className="card-header">
                             <h3 className="card-title">
-                                <i className="fa fa-text-width"/>&nbsp;Text Emphasis
+                                <i className="fa fa-text-width" />&nbsp;Text Emphasis
                             </h3>
                         </div>
                         <div className="card-body">
@@ -58,7 +58,7 @@ export default class Index extends React.Component {
                     <div className="card">
                         <div className="card-header">
                             <h3 className="card-title">
-                                <i className="fa fa-text-width"/>&nbsp;Description
+                                <i className="fa fa-text-width" />&nbsp;Description
                             </h3>
                         </div>
                         <div className="card-body">
@@ -79,7 +79,7 @@ export default class Index extends React.Component {
                     <div className="card">
                         <div className="card-header">
                             <h3 className="card-title">
-                                <i className="fa fa-text-width"/>&nbsp;Description Horizontal
+                                <i className="fa fa-text-width" />&nbsp;Description Horizontal
                             </h3>
                         </div>
                         <div className="card-body">
@@ -91,7 +91,7 @@ export default class Index extends React.Component {
                                 <dd>Donec id elit non mi porta gravida at eget metus.</dd>
                                 <dt>Felis euismod semper eget lacinia</dt>
                                 <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-                                    sit amet risus.
+                                sit amet risus.
                                 </dd>
                             </dl>
                         </div>
@@ -104,7 +104,7 @@ export default class Index extends React.Component {
                     <div className="card card-default color-palette-box">
                         <div className="card-header">
                             <h3 className="card-title">
-                                <i className="fa fa-tag"/>&nbsp;Color Palette
+                                <i className="fa fa-tag" />&nbsp;Color Palette
                             </h3>
                         </div>
                         <div className="card-body">

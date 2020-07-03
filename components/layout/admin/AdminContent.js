@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const AdminContent = (props) => {
+export const AdminContent = (props) => {
     return <div className="content-wrapper" style={{minHeight: '93vh'}}>
         <div className="content-header">
             {props.title && <div className="container-fluid">
@@ -26,5 +26,3 @@ AdminContent.propTypes = {
     title: PropTypes.string,
     titleButton: PropTypes.element,
 };
-
-export default AdminContent;

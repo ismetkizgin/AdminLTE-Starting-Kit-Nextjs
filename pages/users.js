@@ -1,4 +1,5 @@
-import AdminLayoutHoc from "../components/Layout/AdminLayoutHoc";
+import { AdminLayoutHoc } from '../components/layout/admin';
+
 import Link from 'next/link';
 
 export default class Users extends React.Component {
