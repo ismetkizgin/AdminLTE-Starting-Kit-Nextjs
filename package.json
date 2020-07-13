@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:ismetkizgin/MyFIS-WebSite.git",
-  "author": "Yusuf Dede <yusufdede95@hotmail.com>",
+  "author": "Unit Zero",
   "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "npm run build && next start"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
