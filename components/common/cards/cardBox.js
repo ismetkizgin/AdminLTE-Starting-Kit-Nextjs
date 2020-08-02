@@ -3,16 +3,16 @@ import { Component } from 'react';
 
 export class CardBox extends Component {
     render() {
-        return <div class={`card card-${this.props.type}`} >
-            <div class="card-header">
-                <h3 class="card-title">{this.props.title}</h3>
+        return <div className={`card card-${this.props.type}`} >
+            <div className="card-header">
+                <h3 className="card-title">{this.props.title}</h3>
 
-                <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                <div className="card-tools">
+                    <button type="button" className="btn btn-tool" data-card-widget="collapse"><i className="fas fa-minus"></i></button>
+                    <button type="button" className="btn btn-tool" data-card-widget="remove"><i className="fas fa-times"></i></button>
                 </div>
             </div>
-            <div class="card-body" style={{ display: "block" }}>
+            <div className="card-body" style={{ display: "block" }}>
                 {this.props.children}
             </div>
         </div>

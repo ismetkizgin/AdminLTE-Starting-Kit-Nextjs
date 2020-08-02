@@ -3,9 +3,9 @@ import { Component } from 'react';
 
 export class Alert extends Component {
     render() {
-        return <div class={"alert alert-dismissible alert-" + this.props.type}>
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            <h5><i class={"icon fas fa-"+this.props.icon}></i>{this.props.title}</h5>
+        return <div className={"alert alert-dismissible alert-" + this.props.type}>
+            <button type="button" className="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <h5><i className={"icon fas fa-"+this.props.icon}></i>{this.props.title}</h5>
             {this.props.children}
         </div>
     }

@@ -3,7 +3,7 @@ import { Component } from 'react';
 
 export class Input extends Component {
     render() {
-        return <input name={this.props.name} type={this.props.type} class={this.props.className} disabled={this.props.disabled} placeholder={this.props.placeholder} required/>
+        return <input name={this.props.name} type={this.props.type} className={this.props.className} disabled={this.props.disabled} placeholder={this.props.placeholder} required/>
     }
 };
 
