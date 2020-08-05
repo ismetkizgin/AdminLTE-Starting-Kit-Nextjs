@@ -8,8 +8,8 @@ export class CardBox extends Component {
                 <h3 class="card-title">{this.props.title}</h3>
 
                 <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" style={{visibility: this.props.toggleButtonVisibility}}><i class="fas fa-minus"></i></button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove" style={{visibility: this.props.closeButtonVisibility}}><i class="fas fa-times"></i></button>
                 </div>
             </div>
             <div class="card-body" style={{ display: "block" }}>
@@ -21,12 +21,16 @@ export class CardBox extends Component {
 
 CardBox.propTypes = {
     title: PropTypes.string,
-    type: PropTypes.string
+    type: PropTypes.string,
+    closeButtonVisibility: PropTypes.string,
+    toggleButtonVisibility: PropTypes.string
 };
 
 CardBox.defaultProps = {
     title: "",
-    type: "success"
+    type: "success",
+    closeButtonVisibility: "hidden",
+    toggleButtonVisibility: "hidden"
 };
 
 
