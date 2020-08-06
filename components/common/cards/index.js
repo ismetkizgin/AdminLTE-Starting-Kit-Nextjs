@@ -1,4 +1,3 @@
-export * from './accordion/accordion'
-export * from './accordion/accordionItem'
+export * from './accordion'
 export * from './contact'
 export * from './cardBox'
