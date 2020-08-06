@@ -3,7 +3,7 @@ import { Component } from 'react';
 
 export class Button extends Component {
     render() {
-        return <button name={this.props.name} type="button" class={'btn btn-block btn-' + this.props.type} disabled={this.props.disabled}>{this.props.title}</button>
+        return <button name={this.props.name} type="button" className={'btn btn-block btn-' + this.props.type} disabled={this.props.disabled}>{this.props.title}</button>
     }
 };
 

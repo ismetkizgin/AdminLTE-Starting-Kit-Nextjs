@@ -3,7 +3,7 @@ import { Component } from 'react';
 
 export class Textarea extends Component {
     render() {
-        return <textarea name={this.props.name} class="form-control" rows={this.props.rows} cols={this.props.cols} placeholder={this.props.placeholder} disabled={this.props.disabled} required ></textarea>
+        return <textarea name={this.props.name} className="form-control" rows={this.props.rows} cols={this.props.cols} placeholder={this.props.placeholder} disabled={this.props.disabled} required ></textarea>
     }
 };
 
