@@ -1,75 +1,67 @@
 import { Component } from "react";
+import { AdminLayout } from '../../components/layout';
 
-import '../../public/assets/css/stylesAdmin.scss'
-import Head from 'next/head'
 
 export default class Login extends Component {
-  render() {
-    return (
-        <html>
-        <Head>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog==" crossOrigin="anonymous"></script>
-        </Head>
-        <body className="login-page" style={{minHeight: '512.391px'}}>
-        <div className="login-box">
-            <div className="login-logo">
-                <a href="../../index2.html"><b>Ailem Güvende</b></a>
-            </div>
-
-            <div className="card">
-                <div className="card-body login-card-body">
-                    <p className="login-box-msg">Oturum Açın</p>
-
-                    <form action="/index" method="post">
-                        <div className="input-group mb-3">
-                            <input type="email" className="form-control" placeholder="TC"/>
-                            <div className="input-group-append">
-                                <div className="input-group-text">
-                                    <span style={{minWidth:'16px' , minHeight:'16px'}} className="fas fa-envelope"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="input-group mb-3">
-                            <input type="password" className="form-control" placeholder="Şifre"/>
-                            <div className="input-group-append">
-                                <div className="input-group-text">
-                                    <span style={{minWidth:'16px' , minHeight:'16px'}} className="fas fa-lock"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-6">
-                                <div className="icheck-primary">
-                                    <input type="checkbox" id="remember"/>
-                                    <label htmlFor="remember">
-                                        Beni Hatırla
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div className="col-6">
-                                <button type="submit" className="btn btn-primary btn-block">Oturum Aç</button>
-                            </div>
-
-                        </div>
-                    </form>
-
-
-
-                    <p className="mb-1">
-                        <a href="forgot-password.html">Şifremi Unuttum</a>
-                    </p>
-                    <p className="mb-0">
-                        <a href="register.html" className="text-center">Kayıt Ol</a>
-                    </p>
+    render() {
+        return <AdminLayout layoutNone={true} className="hold-transition login-page">
+            <div class="login-box">
+                <div class="login-logo">
+                    <a href="../../index2.html"><b>Admin</b>LTE</a>
                 </div>
+                <div class="card">
+                    <div class="card-body login-card-body">
+                        <p class="login-box-msg">Sign in to start your session</p>
 
+                        <form action="../../index3.html" method="post">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Email" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-envelope"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" placeholder="Password" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-lock"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="icheck-primary">
+                                        <input type="checkbox" id="remember" />
+                                        <label for="remember">Remember Me</label>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="social-auth-links text-center mb-3">
+                            <p>- OR -</p>
+                            <a href="#" class="btn btn-block btn-primary">
+                                <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+        </a>
+                            <a href="#" class="btn btn-block btn-danger">
+                                <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+        </a>
+                        </div>
+
+                        <p class="mb-1">
+                            <a href="forgot-password.html">I forgot my password</a>
+                        </p>
+                        <p class="mb-0">
+                            <a href="register.html" class="text-center">Register a new membership</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        </body>
-        </html>
-
-    );
-  }
+        </AdminLayout >
+    }
 }
