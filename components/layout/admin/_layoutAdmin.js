@@ -17,20 +17,22 @@ export class AdminLayout extends Component {
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" />
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog==" crossOrigin="anonymous"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" />
-
                 <script src="/assets/js/adminlte.min.js" />
             </Head>
-            <body className="sidebar-mini">
-                <div className="wrapper">
-                    <Header />
-                    <Sidebar />
-                    <Content title={this.props.contentTitle} titleButton={this.props.contentTitleButton}>
-                        {this.props.children}
-                    </Content>
-                    <ControlSidebar />
-                    <Footer rightContent={<div><b>Version:</b>1.0.0</div>} leftContent={'Copyright © 2020 Unit Zero All rights reserved.'} />
-                </div>
-            </body>
+
+            {this.props.layoutNone ? <body className={this.props.className}>
+                {this.props.children}
+            </body> : <body className={"sidebar-mini" + this.props.className}>
+                    <div className="wrapper">
+                        <Header />
+                        <Sidebar />
+                        <Content title={this.props.contentTitle} titleButton={this.props.contentTitleButton}>
+                            {this.props.children}
+                        </Content>
+                        <ControlSidebar />
+                        <Footer rightContent={<div><b>Version:</b>1.0.0</div>} leftContent={'Copyright © 2020 Unit Zero All rights reserved.'} />
+                    </div>
+                </body>}
         </html>
     }
 }
@@ -38,4 +40,13 @@ export class AdminLayout extends Component {
 AdminLayout.propTypes = {
     contentTitle: PropTypes.string,
     contentTitleButton: PropTypes.element,
+    className: PropTypes.string,
+    layoutType: PropTypes.bool
 };
+
+AdminLayout.propTypes = {
+    layoutNone: false,
+    className: null,
+    contentTitle: null,
+    contentTitleButton: null
+}

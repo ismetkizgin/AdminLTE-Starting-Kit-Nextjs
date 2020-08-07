@@ -5,17 +5,7 @@
  * @url https://getbootstrap.com/docs/4.0/getting-started/webpack/#importing-precompiled-sass
  */
 //$blue:    purple; // Override variables here to style accordingly
+
+@import '~admin-lte/build/scss/AdminLTE.scss';
 @import '~bootstrap/scss/bootstrap';
-@import "~admin-lte/build/scss/AdminLTE.scss";
-
-
-$color: blue;
-h1 {
-  color: $color;
-}
-
-.color-palette {
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-}
+@import '~icheck-bootstrap/icheck-bootstrap.min.css';
