@@ -1,0 +1,8 @@
+{
+    "manifest": {
+        "projectName": "My Family is Safe"
+    },
+    "default":{
+        "buttonName": "Button Name"
+    }
+}
