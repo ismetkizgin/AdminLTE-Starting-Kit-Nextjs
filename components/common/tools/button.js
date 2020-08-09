@@ -3,19 +3,14 @@ import { Component } from 'react';
 
 export class Button extends Component {
     render() {
-        return <button name={this.props.name} type="button" className={'btn btn-block btn-' + this.props.type} disabled={this.props.disabled}>{this.props.title}</button>
+        return <button type="button" className={'btn btn-block btn-' + this.props.classType} {...this.props} >{this.props.children}</button>
     }
 };
 
 Button.propTypes = {
-    title: PropTypes.string,
-    name: PropTypes.string,
-    type: PropTypes.string,
-    disabled: PropTypes.bool
+    classType: PropTypes.string
 };
 
 Button.defaultProps = {
-    title: "Button Name",
-    type: "success",
-    disabled: false
+    classType: "success"
 };
