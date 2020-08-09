@@ -1,0 +1,8 @@
+{
+    "manifest": {
+        "projectName": "Ailem Güvende"
+    },
+    "default":{
+        "buttonName": "Buton Adı"
+    }
+}
