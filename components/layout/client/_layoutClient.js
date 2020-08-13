@@ -1,6 +1,7 @@
 import '../../../public/assets/css/stylesAdmin.scss'
 import { Component } from 'react'
 import Head from 'next/head'
+import { Navbar } from './navbar'
 
 export class ClientLayout extends Component {
     render() {
@@ -15,6 +16,7 @@ export class ClientLayout extends Component {
                 <script src="/assets/js/adminlte.min.js" />
             </Head>
             <body>
+                <Navbar />
                 {this.props.children}
             </body>
         </html>
