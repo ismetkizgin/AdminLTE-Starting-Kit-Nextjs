@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { AdminLayout } from '../../components/layout';
+import { AdminLayout } from '../components/layout';
 
 
 export default class Login extends Component {

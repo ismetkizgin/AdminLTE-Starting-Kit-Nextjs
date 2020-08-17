@@ -2,3 +2,4 @@
 /.next
 /.idea
 package-lock.json
+/FakeServer/node_modules
