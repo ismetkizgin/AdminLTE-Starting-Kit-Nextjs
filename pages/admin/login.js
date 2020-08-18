@@ -7,7 +7,8 @@ export default class Login extends Component {
     onLoginClick = async () => {
         console.log('deneme');
         const response = await AuthController.loginAsync();
-        Router.push('/admin');
+        console.log({response});
+        //Router.push('/admin');
     }
 
     render() {

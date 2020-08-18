@@ -32,11 +32,11 @@ export async function handleAuthSSR(ctx) {
         // redirect to login
         if (ctx.res) {
             ctx.res.writeHead(302, {
-                Location: '/'
+                Location: '/admin/login'
             })
             ctx.res.end()
         } else {
-            Router.push('/')
+            Router.push('/admin/login')
         }
     }
 }
