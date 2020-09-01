@@ -15,19 +15,12 @@ class NavBar extends Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className={`nav-item ${pathname === '/' ? 'active' : ''}`}>
-                            <a className="nav-link" href="#">HOME<span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href="/">Anasayfa<span className="sr-only">(current)</span></a>
                         </li>
-                        <li className={`nav-item ${pathname === '/about' ? 'active' : ''}`}>
-                            <a className="nav-link" href="#"> ABOUT</a>
-                        </li>
-                        <li className={`nav-item ${pathname === '/contact' ? 'active' : ''}`}>
-                            <a className="nav-link" href="#">CONTACT</a>
+                        <li className={`nav-item ${pathname === '/admin' ? 'active' : ''}`}>
+                            <a className="nav-link" href="admin">Admin</a>
                         </li>
                     </ul>
-                    <form className="form-inline my-2 my-lg-0">
-                        <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className='my-2 my-sm-0 btn btn-outline-light' type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
