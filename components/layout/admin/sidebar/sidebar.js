@@ -26,38 +26,14 @@ class SideBar extends Component {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/admin/users">
-                                <a className={['nav-link', pathname === '/admin/users' ? 'active' : ''].join(' ')}>
+                            <Link href="/admin/login">
+                                <a className={['nav-link', pathname === '/admin/login' ? 'active' : ''].join(' ')}>
                                     <i className="nav-icon fa fa-user-circle"/>
                                     <p>
-                                        Users
-                                        <span className="right badge badge-success">2</span>
+                                        Login
                                     </p>
                                 </a>
                             </Link>
-                        </li>
-                        <li className="nav-item has-treeview menu-closed">
-                            <a href="#" className="nav-link">
-                                <i className="nav-icon fa fa-dashboard"/>
-                                <p>
-                                    Other Pages
-                                    <i className="right fa fa-angle-left"/>
-                                </p>
-                            </a>
-                            <ul className="nav nav-treeview">
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        <i className="fa fa-circle-o nav-icon"/>
-                                        <p>Active Page</p>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        <i className="fa fa-circle-o nav-icon"/>
-                                        <p>Inactive Page</p>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </nav>
