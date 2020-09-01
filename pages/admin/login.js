@@ -1,21 +1,12 @@
 import { Component } from "react"
 import { AdminLayout } from '../../components/layout'
-import Router from 'next/router'
-import { AuthController } from '../../controllers'
 
 export default class Login extends Component {
-    onLoginClick = async () => {
-        console.log('deneme');
-        const response = await AuthController.loginAsync();
-        console.log({response});
-        //Router.push('/admin');
-    }
-
     render() {
         return <AdminLayout layoutNone={true} className="hold-transition login-page">
             <div className="login-box">
                 <div className="login-logo">
-                    <a href="../../index2.html">Ailem <b>Güvende</b></a>
+                    <a href="/">Ailem <b>Güvende</b></a>
                 </div>
                 <div className="card">
                     <div className="card-body login-card-body">
@@ -45,7 +36,7 @@ export default class Login extends Component {
                                 </div>
                             </div>
                             <div className="col-4">
-                                <button type="submit" onClick={() => this.onLoginClick()} className="btn btn-primary btn-block">Giriş Yap</button>
+                                <button type="submit" className="btn btn-primary btn-block">Giriş Yap</button>
                             </div>
                         </div>
                         <p className="mb-1">
