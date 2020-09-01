@@ -28,7 +28,7 @@ CardBox.propTypes = {
 
 CardBox.defaultProps = {
     title: null,
-    type: "success",
+    type: "default",
     closeButtonVisibility: "hidden",
     toggleButtonVisibility: "hidden"
 };

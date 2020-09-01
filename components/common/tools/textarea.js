@@ -7,6 +7,6 @@ export class Textarea extends Component {
 };
 
 Textarea.defaultProps = {
-    rows: 4,
+    rows: 5,
     cols: 50
 };
