@@ -14,7 +14,7 @@ There are two layouts to be used in the project. One of these layouts is the cli
 * input
 * textarea
 
-** Installation
+## Installation
 
 Deploy methods of AdminLTE Starting Kit Nextjs project are given below.
 
