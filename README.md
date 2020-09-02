@@ -2,8 +2,6 @@
 
 ## Components
 
-Components Included in the Project
-
 There are two layouts to be used in the project. One of these layouts is the client and the other is the admin layout for adminlte. Components prepared for use below are given in item form. There are sample uses on the dashboard page.
 
 * Accordion-Accordion Item
