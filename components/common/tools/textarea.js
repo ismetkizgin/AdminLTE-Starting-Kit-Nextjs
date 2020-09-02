@@ -7,6 +7,7 @@ export class Textarea extends Component {
 };
 
 Textarea.defaultProps = {
-    rows: 4,
-    cols: 50
+    rows: 5,
+    cols: 50,
+    className: "form-control"
 };

@@ -11,6 +11,6 @@ Input.propTypes = {
 
 /*should use "form-check-input" class for chekbox*/
 Input.defaultProps = {
-    type: "Text",
+    type: "text",
     className: "form-control"
 };
