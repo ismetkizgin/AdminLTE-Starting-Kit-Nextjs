@@ -15,7 +15,7 @@ class NavBar extends Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className={`nav-item ${pathname === '/' ? 'active' : ''}`}>
-                            <a className="nav-link" href="/">Anasayfa<span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href="/">Home<span className="sr-only">(current)</span></a>
                         </li>
                         <li className={`nav-item ${pathname === '/admin' ? 'active' : ''}`}>
                             <a className="nav-link" href="admin">Admin</a>
