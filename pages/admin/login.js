@@ -6,7 +6,7 @@ export default class Login extends Component {
         return <AdminLayout layoutNone={true} className="hold-transition login-page">
             <div className="login-box">
                 <div className="login-logo">
-                    <a href="/">Admin LTE Starting Kit<b>Nextjs</b></a>
+                    <a href="/">Admin LTE Starting Kit <b>Nextjs</b></a>
                 </div>
                 <div className="card">
                     <div className="card-body login-card-body">
