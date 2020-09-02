@@ -1,5 +1,21 @@
 # AdminLTE Starting Kit Nextjs
 
+## Components
+
+Components Included in the Project
+
+There are two layouts to be used in the project. One of these layouts is the client and the other is the admin layout for adminlte. Components prepared for use below are given in item form. There are sample uses on the dashboard page.
+
+* Accordion-AccordionItem
+* cardBox
+* contact
+* alert
+* button
+* input
+* textarea
+
+** Installation
+
 Deploy methods of AdminLTE Starting Kit Nextjs project are given below.
 
 ### Project Publishing Instructions
