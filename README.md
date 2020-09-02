@@ -13,7 +13,7 @@ There are two layouts to be used in the project. One of these layouts is the cli
 * Button
 * Input
 * Textarea
-* Formik - formik feild
+* Formik - Formik Feild
 
 ## Installation
 
