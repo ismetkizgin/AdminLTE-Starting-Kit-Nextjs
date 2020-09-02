@@ -8,9 +8,11 @@ export class Button extends Component {
 };
 
 Button.propTypes = {
-    classType: PropTypes.string
+    classType: PropTypes.string,
+    type: PropTypes.string
 };
 
 Button.defaultProps = {
-    classType: "success"
+    classType: "success",
+    type:'submit'
 };
