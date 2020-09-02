@@ -1,11 +1,12 @@
 import { Component } from 'react'
 import { AdminLayout } from '../../components/layout'
-import { CardBox, Button, Alert, Textarea, Accordion, AccordionItem, Contact } from '../../components/common'
+import { CardBox, Button, Alert, Textarea, Input, FormikForm, FormikField, Accordion, AccordionItem, Contact } from '../../components/common'
 export default class Index extends Component {
     render() {
         return <AdminLayout contentTitle={'Home'} contentTitleButton={<i className="fa fa-2x fa-home" />} url={this.props.url}>
             <div className="row">
-                <div className="col-6">
+
+                <div className="col-12">
                     <CardBox closeButtonVisibility={"block"} title={"Button Component"}>
                         <div className="row">
                             <div className="col-4">
@@ -18,7 +19,7 @@ export default class Index extends Component {
                                 <Button classType={"primary"}>Button Name</Button>
                             </div>
                         </div>
-                        <br/><br/>
+                        <br />
                         <div className="row">
                             <div className="col-4">
                                 <Button classType={"info"}>Button Name</Button>
@@ -32,16 +33,56 @@ export default class Index extends Component {
                         </div>
                     </CardBox>
                 </div>
+
                 <div className="col-6">
-                    <CardBox type={"warning"} closeButtonVisibility={"block"} toggleButtonVisibility={"block"} title={"Textarea Component"}>
-                        <div className="row">
-                            <Textarea></Textarea>
-                        </div>
+                    <CardBox type={"warning"} toggleButtonVisibility={"block"} title={"Input and Textarea Component"}>
+                        <form role="form">
+                            <div className="form-group">
+                                <label>First Name</label>
+                                <Input placeholder={"First Name"} />
+                            </div>
+                            <div className="form-group">
+                                <label>Last Name</label>
+                                <Input placeholder={"Last Name"} />
+                            </div>
+                            <div className="from-group">
+                                <label>Message</label>
+                                <Textarea />
+                            </div>
+                            <br />
+                            <div className="from-group col-3">
+                                <Button classType={"primary"}>Submit</Button>
+                            </div>
+                        </form>
                     </CardBox>
                 </div>
-            </div>
-            <div className="row">
+
                 <div className="col-6">
+                    <CardBox type={"secondary"} toggleButtonVisibility={"block"} title={"Formik Component"}>
+                        <FormikForm
+                            initialValues={{ firstName: '', lastName: '' }}
+                            onSubmit={async (value) => {
+                                alert(`${value.firstName} ${value.lastName}`)
+                            }}
+                        >
+                            <div className="form-group">
+                                <label>First Name</label>
+                                <FormikField id="firstName" name="firstName" placeholder="First Name" />
+                            </div>
+                            <div className="form-group">
+                                <label>Last Name</label>
+                                <FormikField id="lastName" name="lastName" placeholder="Last Name" />
+                            </div>
+                            <br />
+                            <div className="from-group col-3">
+                                <Button classType={"primary"}>Submit</Button>
+                            </div>
+                        </FormikForm>
+
+                    </CardBox>
+                </div>
+
+                <div className="col-12">
                     <CardBox type={"primary"} closeButtonVisibility={"block"} toggleButtonVisibility={"block"} title={"Alert Component"}>
                         <Alert type={"success"} icon={"check"} title={"Success Alert"}>
                             <h5> Success Alert Text</h5>
@@ -57,13 +98,23 @@ export default class Index extends Component {
                         </Alert>
                     </CardBox>
                 </div>
-                <div className="col-6">
+
+                <div className="col-12">
                     <CardBox type={"info"} closeButtonVisibility={"block"} toggleButtonVisibility={"block"} title={"Button Component"}>
-                        <Contact title={"Contact Card"} name={"First and Last Name"} email={"mail@email.com"}></Contact>
+                        <div className="row">
+                            <div className="col-4">
+                                <Contact title={"Contact Card"} name={"First and Last Name"} email={"mail@email.com"}></Contact>
+                            </div>
+                            <div className="col-4">
+                                <Contact title={"Contact Card"} name={"First and Last Name"} email={"mail@email.com"}></Contact>
+                            </div>
+                            <div className="col-4">
+                                <Contact title={"Contact Card"} name={"First and Last Name"} email={"mail@email.com"}></Contact>
+                            </div>
+                        </div>
                     </CardBox>
                 </div>
-            </div>
-            <div className="row">
+
                 <div className="col-12">
                     <CardBox type={"danger"} closeButtonVisibility={"block"} toggleButtonVisibility={"block"} title={"Accordion Component"}>
                         <div className="row">
