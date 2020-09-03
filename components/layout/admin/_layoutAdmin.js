@@ -22,7 +22,7 @@ export class AdminLayout extends Component {
 
             {this.props.layoutNone ? <body className={this.props.className}>
                 {this.props.children}
-            </body> : <body className={"sidebar-mini" + this.props.className}>
+            </body> : <body className={"sidebar-mini layout-fixed " + this.props.className}>
                     <div className="wrapper">
                         <Header />
                         <Sidebar />
